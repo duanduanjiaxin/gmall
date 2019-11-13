@@ -57,5 +57,19 @@ public interface UserInfoService {
      * @param id
      * @return
      */
-    List<UserAddress> getUserAddressByUserId(String id);
+    List<UserAddress> getUserAddressByUserId(String userId);
+
+    /**
+     * 登录
+     * @param userInfo
+     * @return
+     */
+    UserInfo login(UserInfo userInfo);
+
+    /**
+     * 根据UserID查询用户
+     * @param userId
+     * @return
+     */
+    UserInfo verify(String userId);
 }
